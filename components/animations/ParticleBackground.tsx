@@ -24,7 +24,10 @@ export default function ParticleBackground() {
         background: { color: { value: 'transparent' } },
         fpsLimit: 60,
         particles: {
-          number: { value: 80, density: { enable: true, area: 800 } },
+          number: {
+            value: 80,
+            density: { enable: true, width: 800, height: 800 },
+          },
           color: { value: ['#3B82F6', '#06B6D4'] },
           opacity: {
             value: { min: 0.1, max: 0.5 },
