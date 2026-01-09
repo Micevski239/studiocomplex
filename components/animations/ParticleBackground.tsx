@@ -1,7 +1,7 @@
 'use client'
 
-import { useCallback } from 'react'
-import Particles from '@tsparticles/react'
+import { useEffect } from 'react'
+import Particles, { initParticlesEngine } from '@tsparticles/react'
 import { loadSlim } from '@tsparticles/slim'
 import type { Engine } from '@tsparticles/engine'
 
@@ -11,15 +11,16 @@ export default function ParticleBackground() {
     return null
   }
 
-  const particlesInit = useCallback(async (engine: Engine) => {
-    await loadSlim(engine)
+  useEffect(() => {
+    initParticlesEngine(async (engine: Engine) => {
+      await loadSlim(engine)
+    })
   }, [])
 
   return (
     <Particles
       id="tsparticles"
       className="absolute inset-0 -z-10"
-      init={particlesInit}
       options={{
         background: { color: { value: 'transparent' } },
         fpsLimit: 60,
