@@ -3,7 +3,6 @@
 import { motion } from 'framer-motion'
 import { TypeAnimation } from 'react-type-animation'
 import dynamic from 'next/dynamic'
-import { GlitchText } from '@/components/animations'
 
 // Lazy load particle background
 const ParticleBackground = dynamic(
@@ -44,11 +43,7 @@ export default function Hero() {
               repeat={Infinity}
             />
             <br />
-            <GlitchText
-              text="mobile & web experiences"
-              className="text-text-secondary"
-              triggerOnHover={true}
-            />
+            <span className="text-text-secondary">mobile & web experiences</span>
           </h1>
 
           <p className="mb-10 text-lg leading-relaxed text-text-secondary sm:text-xl">

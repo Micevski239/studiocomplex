@@ -30,26 +30,6 @@ const config: Config = {
       maxWidth: {
         container: '1280px',
       },
-      keyframes: {
-        glitch: {
-          '0%, 100%': { transform: 'translate(0)' },
-          '20%': { transform: 'translate(-2px, 2px)' },
-          '40%': { transform: 'translate(-2px, -2px)' },
-          '60%': { transform: 'translate(2px, 2px)' },
-          '80%': { transform: 'translate(2px, -2px)' },
-        },
-        'glitch-skew': {
-          '0%, 100%': { transform: 'skew(0deg)' },
-          '20%': { transform: 'skew(-2deg)' },
-          '40%': { transform: 'skew(2deg)' },
-          '60%': { transform: 'skew(-1deg)' },
-          '80%': { transform: 'skew(1deg)' },
-        },
-      },
-      animation: {
-        glitch: 'glitch 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) both',
-        'glitch-skew': 'glitch-skew 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) both',
-      },
     },
   },
   plugins: [],
