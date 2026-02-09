@@ -1,21 +1,25 @@
+'use client'
+
+import { useTranslations } from 'next-intl'
+
 export default function Footer() {
+  const t = useTranslations('footer')
+
   return (
-    <footer className="bg-space">
+    <footer className="bg-space dark:bg-dark-space">
       <div className="mx-auto max-w-container px-6 py-12">
-        <div className="flex flex-col items-center justify-between gap-6 border-t border-space-surface pt-8 sm:flex-row">
+        <div className="flex flex-col items-center justify-between gap-6 border-t border-space-surface pt-8 dark:border-dark-space-surface sm:flex-row">
           <div>
             <div className="mb-2 font-mono text-xl font-bold text-accent-blue">StudioComplex</div>
-            <p className="text-sm text-text-secondary">
-              Full-stack developer specializing in
-              <br />
-              mobile and web applications.
+            <p className="text-sm text-text-secondary dark:text-dark-text-secondary">
+              {t('description')}
             </p>
           </div>
 
           <div className="flex gap-8 text-sm">
             <a
               href="mailto:your@email.com"
-              className="text-text-secondary transition-colors hover:text-accent-blue"
+              className="text-text-secondary transition-colors hover:text-accent-blue dark:text-dark-text-secondary"
             >
               Email
             </a>
@@ -23,7 +27,7 @@ export default function Footer() {
               href="https://github.com/yourusername"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-text-secondary transition-colors hover:text-accent-blue"
+              className="text-text-secondary transition-colors hover:text-accent-blue dark:text-dark-text-secondary"
             >
               GitHub
             </a>
@@ -31,7 +35,7 @@ export default function Footer() {
               href="https://linkedin.com/in/yourusername"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-text-secondary transition-colors hover:text-accent-blue"
+              className="text-text-secondary transition-colors hover:text-accent-blue dark:text-dark-text-secondary"
             >
               LinkedIn
             </a>
@@ -39,15 +43,15 @@ export default function Footer() {
               href="https://twitter.com/yourusername"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-text-secondary transition-colors hover:text-accent-blue"
+              className="text-text-secondary transition-colors hover:text-accent-blue dark:text-dark-text-secondary"
             >
               Twitter
             </a>
           </div>
         </div>
 
-        <div className="mt-8 border-t border-space-surface pt-6 text-center text-xs text-text-secondary">
-          <p>© 2026 StudioComplex. All rights reserved.</p>
+        <div className="mt-8 border-t border-space-surface pt-6 text-center text-xs text-text-secondary dark:border-dark-space-surface dark:text-dark-text-secondary">
+          <p>© 2026 StudioComplex. {t('rights')}</p>
         </div>
       </div>
     </footer>

@@ -6,11 +6,17 @@
 
 @layer base {
   * {
-    @apply border-space-surface;
+    @apply border-space-surface dark:border-dark-space-surface;
   }
 
+  /* Light mode (default) */
   body {
     @apply bg-space text-text-primary antialiased;
+  }
+
+  /* Dark mode */
+  .dark body {
+    @apply bg-dark-space text-dark-text-primary;
   }
 
   html {
@@ -18,9 +24,181 @@
   }
 }
 
+@layer components {
+  /* Button primary with hover effects */
+  .btn-primary {
+    @apply relative overflow-hidden transition-all duration-300;
+    @apply hover:shadow-lg hover:shadow-accent-blue/25;
+    @apply active:scale-[0.98];
+  }
+
+  .btn-primary::before {
+    content: '';
+    @apply absolute inset-0 -translate-x-full bg-gradient-to-r from-transparent via-white/20 to-transparent;
+    @apply transition-transform duration-500;
+  }
+
+  .btn-primary:hover::before {
+    @apply translate-x-full;
+  }
+
+  /* Button secondary with hover effects */
+  .btn-secondary {
+    @apply relative overflow-hidden transition-all duration-300;
+    @apply hover:border-accent-blue/50 hover:bg-space-surface dark:hover:bg-dark-space-surface;
+    @apply active:scale-[0.98];
+  }
+
+  /* Card hover lift effect */
+  .card-hover {
+    @apply transition-all duration-300;
+    @apply hover:-translate-y-1 hover:shadow-xl hover:shadow-space-surface/50 dark:hover:shadow-dark-space-surface/50;
+  }
+
+  /* Form field focus animations */
+  .form-field {
+    @apply transition-all duration-200;
+    @apply focus:ring-2 focus:ring-accent-blue/50 focus:border-accent-blue;
+    @apply focus:shadow-lg focus:shadow-accent-blue/10;
+  }
+
+  /* Success state */
+  .state-success {
+    @apply border-green-500 bg-green-500/10;
+    animation: success-pulse 0.5s ease-out;
+  }
+
+  /* Error state */
+  .state-error {
+    @apply border-red-500 bg-red-500/10;
+    animation: shake 0.5s ease-out;
+  }
+
+  /* Link hover effect */
+  .link-hover {
+    @apply relative;
+  }
+
+  .link-hover::after {
+    content: '';
+    @apply absolute bottom-0 left-0 h-[2px] w-0 bg-accent-blue;
+    @apply transition-all duration-300;
+  }
+
+  .link-hover:hover::after {
+    @apply w-full;
+  }
+}
+
 @layer utilities {
   .text-balance {
     text-wrap: balance;
   }
+}
 
+/* Theme transition for smooth switching */
+* {
+  transition-property: background-color, border-color;
+  transition-duration: 200ms;
+  transition-timing-function: ease-out;
+}
+
+/* Disable transitions on page load to prevent flash */
+.no-transitions * {
+  transition: none !important;
+}
+
+/* Custom animations */
+@keyframes shimmer {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+@keyframes success-pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.02);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes shake {
+  0%, 100% {
+    transform: translateX(0);
+  }
+  10%, 30%, 50%, 70%, 90% {
+    transform: translateX(-2px);
+  }
+  20%, 40%, 60%, 80% {
+    transform: translateX(2px);
+  }
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes glow {
+  0%, 100% {
+    box-shadow: 0 0 5px rgba(59, 130, 246, 0.5);
+  }
+  50% {
+    box-shadow: 0 0 20px rgba(59, 130, 246, 0.8);
+  }
+}
+
+/* Scroll progress bar fallback styles */
+.scroll-progress {
+  @apply fixed top-0 left-0 right-0 h-[2px] bg-accent-blue z-50;
+  transform-origin: left;
+}
+
+/* Focus visible for accessibility */
+:focus-visible {
+  @apply outline-none ring-2 ring-accent-blue ring-offset-2 ring-offset-space dark:ring-offset-dark-space;
+}
+
+/* Selection color */
+::selection {
+  @apply bg-accent-blue/30 text-text-primary dark:text-dark-text-primary;
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-space-surface dark:bg-dark-space-surface;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-text-secondary/30 dark:bg-dark-text-secondary/30 rounded-full;
+  @apply hover:bg-text-secondary/50 dark:hover:bg-dark-text-secondary/50;
+}
+
+/* Reduced motion preference */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
 }

@@ -1,21 +1,29 @@
 'use client'
 
-import { useEffect } from 'react'
+import { useEffect, useState } from 'react'
 import Particles, { initParticlesEngine } from '@tsparticles/react'
 import { loadSlim } from '@tsparticles/slim'
-import type { Engine } from '@tsparticles/engine'
 
 export default function ParticleBackground() {
-  // Only show on desktop for performance
-  if (typeof window !== 'undefined' && window.innerWidth < 768) {
-    return null
-  }
+  const [init, setInit] = useState(false)
+  const [isMobile, setIsMobile] = useState(true)
 
   useEffect(() => {
-    initParticlesEngine(async (engine: Engine) => {
+    // Check if mobile
+    setIsMobile(window.innerWidth < 768)
+
+    // Initialize particles engine
+    initParticlesEngine(async (engine) => {
       await loadSlim(engine)
+    }).then(() => {
+      setInit(true)
     })
   }, [])
+
+  // Only show on desktop for performance
+  if (isMobile || !init) {
+    return null
+  }
 
   return (
     <Particles

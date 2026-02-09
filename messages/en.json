@@ -1,0 +1,349 @@
+{
+  "header": {
+    "about": "About",
+    "portfolio": "Portfolio",
+    "services": "Services",
+    "techStack": "Why Us",
+    "projects": "Projects",
+    "contact": "Contact"
+  },
+  "hero": {
+    "badge": "Available for New Projects",
+    "title1": "Apps that improve",
+    "title2": "Solutions that simplify",
+    "title3": "Ideas that shape",
+    "subtitle": "your business",
+    "description": "We design and build apps that help your business grow. We create websites, mobile applications, and other products built around your needs.",
+    "valueProposition": "Your next idea starts here.",
+    "startProject": "Start Your Project",
+    "viewWork": "See Our Work",
+    "trustIndicators": {
+      "support": "24/7 support",
+      "delivery": "Fast delivery",
+      "consultation": "Free consultation"
+    }
+  },
+  "portfolio": {
+    "title": "Real Results for Real Clients",
+    "description": "See how we've helped businesses like yours achieve measurable growth",
+    "liveDemo": "Live Demo",
+    "github": "GitHub",
+    "viewAll": "View All Projects"
+  },
+  "testimonials": {
+    "title": "What Our Clients Say",
+    "description": "Don't just take our word for it—hear from businesses we've helped succeed",
+    "trustedBy": "Trusted by companies worldwide",
+    "items": [
+      {
+        "quote": "They delivered exactly what we needed, on time and within budget. Our app's user engagement increased by 150% after launch.",
+        "author": "Sarah Chen",
+        "role": "CEO",
+        "company": "TechStart Inc.",
+        "metric": "150% engagement increase"
+      },
+      {
+        "quote": "Professional, responsive, and they actually listen. The dashboard they built cut our reporting time from hours to minutes.",
+        "author": "Michael Roberts",
+        "role": "Operations Director",
+        "company": "DataFlow Solutions",
+        "metric": "90% time savings"
+      },
+      {
+        "quote": "Best investment we made this year. The mobile app paid for itself within the first month through increased bookings.",
+        "author": "Elena Petrova",
+        "role": "Founder",
+        "company": "BookEasy",
+        "metric": "ROI in 30 days"
+      }
+    ]
+  },
+  "services": {
+    "title": "Solutions That Drive Results",
+    "description": "Every service is designed with one goal: growing your business",
+    "customNote": "Need something custom?",
+    "letsTalk": "Let's talk",
+    "webDev": {
+      "name": "Web Development",
+      "headline": "Web apps that convert visitors into customers",
+      "description": "Fast, revenue-generating web applications that work flawlessly on every device. Your customers won't wait—neither should your website.",
+      "stat": "Average 40% faster load times than industry standard",
+      "capabilities": [
+        "Full-stack web applications",
+        "E-commerce platforms",
+        "Progressive Web Apps (PWAs)",
+        "API development & integration",
+        "Performance optimization",
+        "SEO-ready architecture"
+      ]
+    },
+    "mobileDev": {
+      "name": "Mobile Development",
+      "headline": "Mobile apps your users actually love",
+      "description": "Cross-platform apps that feel native, drive engagement, and keep users coming back. One codebase, twice the reach.",
+      "stat": "4.5+ average App Store rating across client apps",
+      "capabilities": [
+        "iOS & Android from one codebase",
+        "Offline-first functionality",
+        "Push notifications & engagement",
+        "In-app purchases & subscriptions",
+        "App Store optimization",
+        "Seamless backend integration"
+      ]
+    },
+    "uiux": {
+      "name": "UI/UX Design",
+      "headline": "Interfaces that guide users to action",
+      "description": "User-centered design that reduces friction, increases conversions, and makes your product a joy to use.",
+      "stat": "Average 25% improvement in user task completion",
+      "capabilities": [
+        "Conversion-focused design",
+        "User research & testing",
+        "Interactive prototypes",
+        "Design systems",
+        "Accessibility compliance",
+        "Mobile-first approach"
+      ]
+    }
+  },
+  "process": {
+    "title": "How We Work Together",
+    "description": "No surprises, no mysteries. Here's exactly what working with us looks like.",
+    "steps": {
+      "discovery": {
+        "title": "Discovery Call",
+        "duration": "Day 1",
+        "description": "We learn about your business, goals, and challenges. No sales pitch—just a conversation to see if we're the right fit. Zero commitment."
+      },
+      "proposal": {
+        "title": "Detailed Proposal",
+        "duration": "Day 3-5",
+        "description": "You receive a clear scope, timeline, and fixed-price quote. No hidden fees, no \"we'll figure it out later.\" You know exactly what you're getting."
+      },
+      "design": {
+        "title": "Design Phase",
+        "duration": "Week 1-2",
+        "description": "You approve every design before we write a single line of code. Unlimited revisions until you're 100% satisfied with the direction."
+      },
+      "development": {
+        "title": "Development",
+        "duration": "Weeks 2-6",
+        "description": "Weekly demos show your project coming to life. You see progress in real-time and can give feedback at every step."
+      },
+      "testing": {
+        "title": "Testing & Launch",
+        "duration": "Week 6-7",
+        "description": "Thorough QA across all devices and browsers. We handle deployment and ensure a smooth, stress-free launch."
+      },
+      "support": {
+        "title": "Ongoing Support",
+        "duration": "6+ months",
+        "description": "6 months of bug fixes included free. We're here for you long after launch, ensuring your product keeps performing."
+      }
+    },
+    "cta": {
+      "text": "Ready to start? Let's talk about your project.",
+      "button": "Book a Free Call"
+    }
+  },
+  "whyUs": {
+    "title": "Why Clients Choose Us",
+    "description": "We're not just developers—we're partners invested in your success",
+    "techTitle": "Built with modern, battle-tested technology",
+    "benefits": {
+      "onTime": {
+        "title": "On-Time Delivery",
+        "description": "We hit our deadlines. Period. Your project won't drag on for months with endless delays.",
+        "stat": "98% on-time delivery rate"
+      },
+      "pricing": {
+        "title": "Transparent Pricing",
+        "description": "Fixed-price quotes after thorough scoping. No hourly surprises, no scope creep costs.",
+        "stat": "0 budget overruns"
+      },
+      "support": {
+        "title": "Post-Launch Support",
+        "description": "We don't disappear after launch. Bug fixes and support included free for 6 months.",
+        "stat": "6 months free support"
+      },
+      "communication": {
+        "title": "Clear Communication",
+        "description": "Weekly updates, responsive communication, your preferred channel. You'll never wonder what's happening.",
+        "stat": "24-hour response time"
+      },
+      "ownership": {
+        "title": "Full Code Ownership",
+        "description": "You own 100% of the code. No licensing fees, no lock-in, no strings attached.",
+        "stat": "100% code ownership"
+      },
+      "scalable": {
+        "title": "Built to Scale",
+        "description": "Architecture designed for growth. Your app will handle 10x your current users without breaking.",
+        "stat": "Ready for 10x growth"
+      }
+    },
+    "stats": {
+      "years": {
+        "value": "5+",
+        "label": "Years in Business"
+      },
+      "projects": {
+        "value": "50+",
+        "label": "Projects Delivered"
+      },
+      "satisfaction": {
+        "value": "100%",
+        "label": "Client Satisfaction"
+      },
+      "response": {
+        "value": "24h",
+        "label": "Response Time"
+      }
+    },
+    "tech": {
+      "frontend": "Frontend",
+      "backend": "Backend",
+      "mobile": "Mobile",
+      "database": "Database"
+    }
+  },
+  "faq": {
+    "title": "Common Questions & Concerns",
+    "description": "Straight answers to the questions every client asks",
+    "stillHaveQuestions": {
+      "title": "Still have questions?",
+      "description": "We're happy to chat about your specific situation—no obligation.",
+      "button": "Get in Touch"
+    },
+    "questions": [
+      {
+        "question": "What if the project goes over budget?",
+        "answer": "It won't. We provide fixed-price quotes after thorough scoping. In 5 years, we've never exceeded a quoted budget. If scope changes during the project, we discuss pricing transparently before any additional work begins—you'll never be surprised by a bill."
+      },
+      {
+        "question": "I'm not technical—can I still work with you?",
+        "answer": "Absolutely. Most of our clients aren't technical, and that's perfectly fine. We explain everything in plain English, handle all the technical decisions, and keep you informed without overwhelming you with jargon. You focus on your business; we handle the tech."
+      },
+      {
+        "question": "What happens if something breaks after launch?",
+        "answer": "You're covered. Every project includes 6 months of free bug fixes and support. If something breaks, we fix it—no questions asked, no extra charges. After the support period, we offer affordable maintenance plans to keep things running smoothly."
+      },
+      {
+        "question": "How do I know you'll actually deliver?",
+        "answer": "Track record speaks for itself: 98% on-time delivery rate, 50+ successful projects, and clients who come back for more. We also provide weekly progress demos—you'll see your project evolving in real-time, so there are no surprises at the end."
+      },
+      {
+        "question": "What makes you different from cheaper freelancers?",
+        "answer": "Cheaper often costs more in the long run. We've rescued many projects from freelancers who disappeared or delivered buggy code. With us, you get: fixed pricing (no hourly billing games), professional project management, quality assurance testing, proper documentation, and ongoing support. We're a long-term partner, not a one-off transaction."
+      },
+      {
+        "question": "How long will my project take?",
+        "answer": "Typical timelines: Simple websites (2-4 weeks), web applications (6-12 weeks), mobile apps (8-16 weeks). We'll give you an accurate timeline during our discovery call, and we're transparent about what affects delivery—we won't promise something we can't deliver."
+      },
+      {
+        "question": "Do you work with startups or just established businesses?",
+        "answer": "Both! We've helped startups launch their first MVP and scaled enterprise solutions for established companies. What matters is whether we can genuinely help you succeed. If we don't think we're the right fit, we'll tell you honestly."
+      },
+      {
+        "question": "What if I need changes during development?",
+        "answer": "Changes are normal and expected. Minor adjustments within scope are included. For larger changes, we'll discuss the impact on timeline and budget before proceeding—you're always in control. Our weekly demos help catch any misalignments early, before they become expensive."
+      }
+    ]
+  },
+  "contact": {
+    "title": "Let's Build Something Great",
+    "description": "Tell us about your project and get a free assessment within 24 hours",
+    "urgency": {
+      "badge": "Currently accepting 2 new projects this quarter",
+      "description": "Limited availability—book your free consultation to secure your spot"
+    },
+    "form": {
+      "name": "Name",
+      "namePlaceholder": "Your name",
+      "email": "Email",
+      "emailPlaceholder": "your@email.com",
+      "budget": "Budget Range",
+      "budgetPlaceholder": "Select your budget range",
+      "message": "Project Details",
+      "messagePlaceholder": "Tell us about your project, goals, and timeline...",
+      "send": "Get Free Assessment",
+      "sending": "Sending...",
+      "success": "Thanks! We'll review your project and respond within 24 hours with a free assessment.",
+      "error": "Something went wrong. Please try again or email us directly at hello@studiocomplex.dev"
+    },
+    "info": {
+      "title": "Prefer to Talk?",
+      "description": "Book a free 30-minute call. No sales pitch, no pressure—just a conversation about your project and how we can help.",
+      "email": "Email",
+      "connect": "Connect",
+      "availability": "Current Availability",
+      "availabilityText": "We're currently accepting new projects starting March 2024. Book now to secure your spot."
+    },
+    "nextSteps": {
+      "title": "What Happens Next?",
+      "step1": "We review your project details within 24 hours",
+      "step2": "You receive a free assessment with recommendations",
+      "step3": "If we're a good fit, we schedule a discovery call"
+    }
+  },
+  "footer": {
+    "description": "We build the apps that grow your business. From idea to launch—and beyond.",
+    "rights": "All rights reserved."
+  },
+  "projects": {
+    "pageTitle": "All Projects",
+    "pageDescription": "Complete portfolio showcasing real results for real clients",
+    "features": "Features",
+    "technologies": "Technologies",
+    "liveWebsite": "Visit Website",
+    "viewCode": "View Code",
+    "gallery": "Gallery",
+    "contactCta": "Interested in a similar project?",
+    "contactCtaDescription": "Get in touch and let's discuss your idea",
+    "backToProjects": "Back to projects"
+  },
+  "mobileNav": {
+    "home": "Home",
+    "projects": "Projects",
+    "services": "Services",
+    "contact": "Contact",
+    "menu": "Menu"
+  },
+  "notFound": {
+    "title": "Page not found",
+    "description": "Sorry, the page you're looking for doesn't exist.",
+    "backHome": "Back to home"
+  },
+  "awards": {
+    "title": "Recognition & Expertise",
+    "description": "Certified professionals using industry-leading technologies",
+    "partnersTitle": "Technology Partners",
+    "certifications": {
+      "react": {
+        "title": "React Certified Developer",
+        "issuer": "Meta"
+      },
+      "aws": {
+        "title": "AWS Solutions Architect",
+        "issuer": "Amazon Web Services"
+      },
+      "nextjs": {
+        "title": "Next.js Expert",
+        "issuer": "Vercel"
+      }
+    },
+    "partners": {
+      "vercel": "Partner",
+      "supabase": "Partner",
+      "stripe": "Verified"
+    },
+    "recognition": {
+      "excellence": {
+        "title": "Development Excellence Award"
+      },
+      "topRated": {
+        "title": "Top Rated Developer"
+      }
+    }
+  }
+}

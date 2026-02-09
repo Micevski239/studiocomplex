@@ -1,41 +1,24 @@
 'use client'
 
-import { motion } from 'framer-motion'
 import { TypeAnimation } from 'react-type-animation'
-import dynamic from 'next/dynamic'
-
-// Lazy load particle background
-const ParticleBackground = dynamic(
-  () => import('@/components/animations/ParticleBackground'),
-  { ssr: false }
-)
+import { useTranslations } from 'next-intl'
 
 export default function Hero() {
+  const t = useTranslations('hero')
+
   return (
-    <section className="relative overflow-hidden border-b border-space-surface">
-      {/* Particle Background */}
-      <ParticleBackground />
-
+    <section className="relative overflow-hidden border-b border-space-surface bg-space dark:border-dark-space-surface dark:bg-dark-space">
       <div className="mx-auto max-w-container px-6 py-24 sm:py-32 lg:py-40">
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6 }}
-          className="mx-auto max-w-3xl text-center relative z-10"
-        >
-          <div className="mb-6 inline-block rounded-full border border-accent-blue/20 bg-accent-blue/10 px-4 py-1.5">
-            <span className="font-mono text-sm text-accent-blue">Full-Stack Developer</span>
-          </div>
-
+        <div className="relative z-10 mx-auto max-w-3xl text-center">
           {/* Typing Animation */}
-          <h1 className="mb-6 text-5xl font-bold tracking-tight sm:text-6xl lg:text-7xl">
+          <h1 className="mb-6 text-5xl font-bold tracking-tight text-text-primary dark:text-dark-text-primary sm:text-6xl lg:text-7xl">
             <TypeAnimation
               sequence={[
-                'Building exceptional',
+                t('title1'),
                 2000,
-                'Creating innovative',
+                t('title2'),
                 2000,
-                'Developing modern',
+                t('title3'),
                 2000,
               ]}
               wrapper="span"
@@ -43,35 +26,54 @@ export default function Hero() {
               repeat={Infinity}
             />
             <br />
-            <span className="text-text-secondary">mobile & web experiences</span>
+            <span className="text-text-secondary dark:text-dark-text-secondary">{t('subtitle')}</span>
           </h1>
 
-          <p className="mb-10 text-lg leading-relaxed text-text-secondary sm:text-xl">
-            I specialize in creating modern, high-performance applications using React, React Native,
-            and Node.js. From concept to deployment, I deliver clean, scalable solutions.
+          <p className="mb-6 text-lg leading-relaxed text-text-secondary dark:text-dark-text-secondary sm:text-xl">
+            {t('description')}
+          </p>
+
+          <p className="mb-10 text-base font-medium text-accent-blue">
+            {t('valueProposition')}
           </p>
 
           <div className="flex flex-col items-center justify-center gap-4 sm:flex-row">
             <a
-              href="#portfolio"
-              className="group relative inline-flex items-center justify-center overflow-hidden rounded-lg bg-accent-blue px-8 py-4 font-semibold text-white transition-all hover:bg-accent-blue/90 hover:scale-105"
+              href="#contact"
+              className="group relative inline-flex items-center justify-center overflow-hidden rounded-lg bg-accent-blue px-8 py-4 font-semibold text-white transition-all hover:scale-105 hover:bg-accent-blue/90"
             >
-              <span className="relative z-10">View Portfolio</span>
+              <span className="relative z-10">{t('startProject')}</span>
               <span className="ml-2 transition-transform group-hover:translate-x-1">→</span>
             </a>
 
             <a
-              href="#contact"
-              className="inline-flex items-center justify-center rounded-lg border border-space-surface bg-space-light px-8 py-4 font-semibold transition-all hover:border-accent-blue/50 hover:bg-space-surface"
+              href="#portfolio"
+              className="inline-flex items-center justify-center rounded-lg border border-space-surface bg-space-light px-8 py-4 font-semibold text-text-primary transition-all hover:border-accent-blue/50 hover:bg-space-surface dark:border-dark-space-surface dark:bg-dark-space-light dark:text-dark-text-primary dark:hover:bg-dark-space-surface"
             >
-              Get in Touch
+              {t('viewWork')}
             </a>
           </div>
-        </motion.div>
+
+          {/* Trust indicators */}
+          <div className="mt-12 flex flex-wrap items-center justify-center gap-6 text-sm text-text-secondary dark:text-dark-text-secondary">
+            <div className="flex items-center gap-2">
+              <span className="text-accent-blue">✓</span>
+              {t('trustIndicators.support')}
+            </div>
+            <div className="flex items-center gap-2">
+              <span className="text-accent-blue">✓</span>
+              {t('trustIndicators.delivery')}
+            </div>
+            <div className="flex items-center gap-2">
+              <span className="text-accent-blue">✓</span>
+              {t('trustIndicators.consultation')}
+            </div>
+          </div>
+        </div>
       </div>
 
       {/* Subtle background grid */}
-      <div className="pointer-events-none absolute inset-0 bg-[linear-gradient(to_right,#1E293B_1px,transparent_1px),linear-gradient(to_bottom,#1E293B_1px,transparent_1px)] bg-[size:4rem_4rem] opacity-20" />
+      <div className="pointer-events-none absolute inset-0 bg-[linear-gradient(to_right,#E2E8F0_1px,transparent_1px),linear-gradient(to_bottom,#E2E8F0_1px,transparent_1px)] bg-[size:4rem_4rem] opacity-30 dark:bg-[linear-gradient(to_right,#1E293B_1px,transparent_1px),linear-gradient(to_bottom,#1E293B_1px,transparent_1px)] dark:opacity-20" />
     </section>
   )
 }
