@@ -1,5 +1,7 @@
 'use client'
 
+import Image from 'next/image'
+import Link from 'next/link'
 import { useTranslations, useLocale } from 'next-intl'
 import { TiltCard } from '@/components/animations'
 import { getFeaturedProjects } from '@/data/projects'
@@ -8,6 +10,11 @@ export default function Portfolio() {
   const t = useTranslations('portfolio')
   const locale = useLocale()
   const featuredProjects = getFeaturedProjects(locale)
+
+  const getLocalizedPath = (path: string) => {
+    if (locale === 'mk') return path
+    return `/${locale}${path}`
+  }
 
   return (
     <section className="border-b border-space-surface bg-space dark:border-dark-space-surface dark:bg-dark-space">
@@ -23,19 +30,22 @@ export default function Portfolio() {
 
         <div className="mx-auto grid max-w-6xl gap-8 md:grid-cols-2 lg:grid-cols-3">
           {featuredProjects.map((project) => (
+            <Link key={project.slug} href={getLocalizedPath(`/projects/${project.slug}`)}>
             <TiltCard
-              key={project.slug}
               className="group relative flex h-full flex-col rounded-2xl border border-space-surface bg-space-light p-6 transition-all hover:border-accent-blue/50 dark:border-dark-space-surface dark:bg-dark-space-light"
               scale={1.03}
               tiltMaxAngleX={8}
               tiltMaxAngleY={8}
             >
+
               {/* Project Image - fixed ratio */}
-              <div className="mb-6 aspect-video w-full flex-shrink-0 overflow-hidden rounded-lg bg-gradient-to-br from-accent-blue/20 to-accent-cyan/20">
-                <img
+              <div className="relative mb-6 aspect-video w-full flex-shrink-0 overflow-hidden rounded-lg bg-gradient-to-br from-accent-blue/20 to-accent-cyan/20">
+                <Image
                   src={project.coverImage}
                   alt={project.title}
-                  className="h-full w-full object-cover"
+                  fill
+                  className="object-cover"
+                  sizes="(min-width: 1024px) 33vw, (min-width: 768px) 50vw, 100vw"
                 />
               </div>
 
@@ -81,29 +91,18 @@ export default function Portfolio() {
               {/* Links - pinned to bottom */}
               <div className="mt-auto flex gap-3 border-t border-space-surface pt-4 dark:border-dark-space-surface">
                 {project.liveUrl && (
-                  <a
-                    href={project.liveUrl}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="flex-1 rounded-lg bg-accent-blue/10 py-2 text-center text-sm font-semibold text-accent-blue transition-all hover:bg-accent-blue/20"
-                    onClick={(e) => e.stopPropagation()}
-                  >
+                  <span className="flex-1 rounded-lg bg-accent-blue/10 py-2 text-center text-sm font-semibold text-accent-blue transition-all group-hover:bg-accent-blue/20">
                     {t('liveDemo')}
-                  </a>
+                  </span>
                 )}
                 {project.githubUrl && (
-                  <a
-                    href={project.githubUrl}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="flex-1 rounded-lg border border-space-surface py-2 text-center text-sm font-semibold text-text-primary transition-all hover:border-accent-blue/50 dark:border-dark-space-surface dark:text-dark-text-primary"
-                    onClick={(e) => e.stopPropagation()}
-                  >
+                  <span className="flex-1 rounded-lg border border-space-surface py-2 text-center text-sm font-semibold text-text-primary transition-all group-hover:border-accent-blue/50 dark:border-dark-space-surface dark:text-dark-text-primary">
                     {t('github')}
-                  </a>
+                  </span>
                 )}
               </div>
             </TiltCard>
+            </Link>
           ))}
         </div>
       </div>

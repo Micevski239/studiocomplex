@@ -276,6 +276,13 @@
     "description": "We build the apps that grow your business. From idea to launch-and beyond.",
     "rights": "All rights reserved."
   },
+  "projects": {
+    "features": "Features",
+    "technologies": "Technologies",
+    "liveWebsite": "Visit Website",
+    "viewCode": "View Code",
+    "backToProjects": "Back to portfolio"
+  },
   "mobileNav": {
     "home": "Home",
     "portfolio": "Portfolio",

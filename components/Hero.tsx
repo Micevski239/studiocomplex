@@ -11,7 +11,7 @@ export default function Hero() {
       <div className="mx-auto max-w-container px-6 py-24 sm:py-32 lg:py-40">
         <div className="relative z-10 text-center">
           {/* Typing Animation */}
-          <h1 className="mb-6 whitespace-nowrap text-5xl font-bold tracking-tight text-text-primary dark:text-dark-text-primary sm:text-6xl lg:text-7xl">
+          <h1 className="mb-6 text-3xl font-bold tracking-tight text-text-primary dark:text-dark-text-primary sm:text-5xl lg:text-7xl">
             <TypeAnimation
               sequence={[
                 t('title1'),
