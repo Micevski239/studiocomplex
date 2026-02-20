@@ -256,8 +256,6 @@
       "namePlaceholder": "Вашето име",
       "email": "Email",
       "emailPlaceholder": "vashiot@email.com",
-      "budget": "Буџетски опсег",
-      "budgetPlaceholder": "Изберете буџетски опсег",
       "message": "Детали за проектот",
       "messagePlaceholder": "Кажете ни за вашиот проект, цели и временска рамка...",
       "send": "Добијте бесплатна проценка",
@@ -284,6 +282,7 @@
     "technologies": "Технологии",
     "liveWebsite": "Посети веб страна",
     "viewCode": "Погледни код",
+    "gallery": "Галерија",
     "backToProjects": "Назад кон портфолио"
   },
   "mobileNav": {

@@ -256,8 +256,6 @@
       "namePlaceholder": "Your name",
       "email": "Email",
       "emailPlaceholder": "your@email.com",
-      "budget": "Budget Range",
-      "budgetPlaceholder": "Select your budget range",
       "message": "Project Details",
       "messagePlaceholder": "Tell us about your project, goals, and timeline...",
       "send": "Get Free Assessment",
@@ -281,6 +279,7 @@
     "technologies": "Technologies",
     "liveWebsite": "Visit Website",
     "viewCode": "View Code",
+    "gallery": "Gallery",
     "backToProjects": "Back to portfolio"
   },
   "mobileNav": {

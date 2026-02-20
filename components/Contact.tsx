@@ -90,26 +90,6 @@ export default function Contact() {
 
               <div>
                 <label
-                  htmlFor="budget"
-                  className="mb-2 block text-sm font-medium text-text-primary dark:text-dark-text-primary"
-                >
-                  {t('form.budget')}
-                </label>
-                <select
-                  id="budget"
-                  name="budget"
-                  className="w-full rounded-lg border border-space-surface bg-space px-4 py-3 text-text-primary transition-colors focus:border-accent-blue focus:outline-none dark:border-dark-space-surface dark:bg-dark-space dark:text-dark-text-primary"
-                >
-                  <option value="">{t('form.budgetPlaceholder')}</option>
-                  <option value="5k-10k">$5,000 - $10,000</option>
-                  <option value="10k-25k">$10,000 - $25,000</option>
-                  <option value="25k-50k">$25,000 - $50,000</option>
-                  <option value="50k+">$50,000+</option>
-                </select>
-              </div>
-
-              <div>
-                <label
                   htmlFor="message"
                   className="mb-2 block text-sm font-medium text-text-primary dark:text-dark-text-primary"
                 >
