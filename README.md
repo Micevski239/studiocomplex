@@ -1,6 +1,6 @@
-# StudioComplex
+# GoDevLab
 
-A modern, premium portfolio website for StudioComplex - a rapid-delivery development studio.
+A modern, premium portfolio website for GoDevLab - a rapid-delivery development studio.
 
 ## Tech Stack
 
@@ -43,7 +43,7 @@ npm run dev
 ## Project Structure
 
 ```
-studiocomplex/
+godevlab/
 ├── app/
 │   ├── layout.tsx      # Root layout
 │   ├── page.tsx        # Home page
@@ -55,7 +55,7 @@ studiocomplex/
 │   ├── Solution.tsx    # Solution section
 │   ├── Services.tsx    # Services cards
 │   ├── HowItWorks.tsx  # Process section
-│   ├── WhyUs.tsx       # Why StudioComplex
+│   ├── WhyUs.tsx       # Why GoDevLab
 │   ├── WhoItsFor.tsx   # Client filtering
 │   ├── FAQ.tsx         # FAQ accordion
 │   ├── FinalCTA.tsx    # Contact CTA

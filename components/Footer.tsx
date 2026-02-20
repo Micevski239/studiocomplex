@@ -10,7 +10,7 @@ export default function Footer() {
       <div className="mx-auto max-w-container px-6 py-12">
         <div className="flex flex-col items-center justify-between gap-6 border-t border-space-surface pt-8 dark:border-dark-space-surface sm:flex-row">
           <div>
-            <div className="mb-2 font-mono text-xl font-bold text-accent-blue">StudioComplex</div>
+            <div className="mb-2 font-mono text-xl font-bold text-accent-blue">GoDevLab</div>
             <p className="text-sm text-text-secondary dark:text-dark-text-secondary">
               {t('description')}
             </p>
@@ -51,7 +51,7 @@ export default function Footer() {
         </div>
 
         <div className="mt-8 border-t border-space-surface pt-6 text-center text-xs text-text-secondary dark:border-dark-space-surface dark:text-dark-text-secondary">
-          <p>© 2026 StudioComplex. {t('rights')}</p>
+          <p>© 2026 GoDevLab. {t('rights')}</p>
         </div>
       </div>
     </footer>

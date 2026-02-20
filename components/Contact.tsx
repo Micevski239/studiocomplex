@@ -53,16 +53,6 @@ export default function Contact() {
         <div className="mx-auto grid max-w-5xl gap-12 lg:grid-cols-2">
           {/* Contact Form */}
           <div>
-            {/* Urgency banner */}
-            <div className="mb-6 rounded-lg border border-accent-cyan/20 bg-accent-cyan/5 p-4">
-              <p className="text-sm font-medium text-accent-cyan">
-                {t('urgency.badge')}
-              </p>
-              <p className="mt-1 text-xs text-text-secondary dark:text-dark-text-secondary">
-                {t('urgency.description')}
-              </p>
-            </div>
-
             <form onSubmit={handleSubmit} className="space-y-6">
               <div>
                 <label
@@ -168,49 +158,16 @@ export default function Contact() {
               </p>
             </div>
 
-            {/* What happens next */}
-            <div className="rounded-lg border border-space-surface bg-space p-6 dark:border-dark-space-surface dark:bg-dark-space">
-              <h4 className="mb-4 font-semibold text-text-primary dark:text-dark-text-primary">
-                {t('nextSteps.title')}
-              </h4>
-              <div className="space-y-3">
-                <div className="flex items-start gap-3">
-                  <div className="flex h-6 w-6 flex-shrink-0 items-center justify-center rounded-full bg-accent-blue/10 text-xs font-bold text-accent-blue">
-                    1
-                  </div>
-                  <p className="text-sm text-text-secondary dark:text-dark-text-secondary">
-                    {t('nextSteps.step1')}
-                  </p>
-                </div>
-                <div className="flex items-start gap-3">
-                  <div className="flex h-6 w-6 flex-shrink-0 items-center justify-center rounded-full bg-accent-blue/10 text-xs font-bold text-accent-blue">
-                    2
-                  </div>
-                  <p className="text-sm text-text-secondary dark:text-dark-text-secondary">
-                    {t('nextSteps.step2')}
-                  </p>
-                </div>
-                <div className="flex items-start gap-3">
-                  <div className="flex h-6 w-6 flex-shrink-0 items-center justify-center rounded-full bg-accent-blue/10 text-xs font-bold text-accent-blue">
-                    3
-                  </div>
-                  <p className="text-sm text-text-secondary dark:text-dark-text-secondary">
-                    {t('nextSteps.step3')}
-                  </p>
-                </div>
-              </div>
-            </div>
-
             <div className="space-y-6">
               <div>
                 <div className="mb-2 text-sm font-semibold text-text-secondary dark:text-dark-text-secondary">
                   {t('info.email')}
                 </div>
                 <a
-                  href="mailto:hello@studiocomplex.dev"
+                  href="mailto:godevlabagency@gmail.com"
                   className="text-lg text-accent-blue hover:underline"
                 >
-                  hello@studiocomplex.dev
+                  godevlabagency@gmail.com
                 </a>
               </div>
 
@@ -220,31 +177,30 @@ export default function Contact() {
                 </div>
                 <div className="flex gap-4">
                   <a
-                    href="https://github.com/studiocomplex"
+                    href="https://instagram.com/godevlab"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="inline-flex items-center gap-2 rounded-lg border border-space-surface bg-space px-4 py-2 text-sm font-medium text-text-primary transition-all hover:border-accent-blue/50 hover:bg-space-surface dark:border-dark-space-surface dark:bg-dark-space dark:text-dark-text-primary dark:hover:bg-dark-space-surface"
                   >
-                    GitHub
+                    Instagram
                   </a>
                   <a
-                    href="https://linkedin.com/company/studiocomplex"
+                    href="https://facebook.com/godevlab"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="inline-flex items-center gap-2 rounded-lg border border-space-surface bg-space px-4 py-2 text-sm font-medium text-text-primary transition-all hover:border-accent-blue/50 hover:bg-space-surface dark:border-dark-space-surface dark:bg-dark-space dark:text-dark-text-primary dark:hover:bg-dark-space-surface"
                   >
-                    LinkedIn
+                    Facebook
+                  </a>
+                  <a
+                    href="https://wa.me/YOUR_PHONE_NUMBER"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-2 rounded-lg border border-space-surface bg-space px-4 py-2 text-sm font-medium text-text-primary transition-all hover:border-accent-blue/50 hover:bg-space-surface dark:border-dark-space-surface dark:bg-dark-space dark:text-dark-text-primary dark:hover:bg-dark-space-surface"
+                  >
+                    WhatsApp
                   </a>
                 </div>
-              </div>
-
-              <div className="rounded-lg border border-accent-cyan/20 bg-accent-cyan/5 p-6">
-                <div className="mb-2 text-sm font-semibold text-text-primary dark:text-dark-text-primary">
-                  {t('info.availability')}
-                </div>
-                <p className="text-sm text-text-secondary dark:text-dark-text-secondary">
-                  {t('info.availabilityText')}
-                </p>
               </div>
             </div>
           </div>

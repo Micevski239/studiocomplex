@@ -9,18 +9,17 @@
   },
   "hero": {
     "badge": "Available for New Projects",
-    "title1": "Apps that improve",
-    "title2": "Solutions that simplify",
-    "title3": "Ideas that shape",
-    "subtitle": "your business",
-    "description": "We design and build apps that help your business grow. We create websites, mobile applications, and other products built around your needs.",
-    "valueProposition": "Your next idea starts here.",
-    "startProject": "Start Your Project",
+    "title1": "We build products that scale.",
+    "title2": "We ship apps that matter.",
+    "title3": "We engineer for growth.",
+    "subtitle": "",
+    "description": "We build web platforms and mobile apps for businesses looking to establish or grow their digital presence. Based in Macedonia, working with clients locally and internationally.",
+    "valueProposition": "",
+    "startProject": "Book a Strategy Call",
     "viewWork": "See Our Work",
     "trustIndicators": {
-      "support": "24/7 support",
-      "delivery": "Fast delivery",
-      "consultation": "Free consultation"
+      "support": "Production-ready code",
+      "consultation": "Free strategy call"
     }
   },
   "portfolio": {
@@ -32,7 +31,7 @@
   },
   "testimonials": {
     "title": "What Our Clients Say",
-    "description": "Don't just take our word for it—hear from businesses we've helped succeed",
+    "description": "Don't just take our word for it-hear from businesses we've helped succeed",
     "trustedBy": "Trusted by companies worldwide",
     "items": [
       {
@@ -59,19 +58,19 @@
     ]
   },
   "services": {
-    "title": "Solutions That Drive Results",
-    "description": "Every service is designed with one goal: growing your business",
-    "customNote": "Need something custom?",
-    "letsTalk": "Let's talk",
+    "title": "What We Build",
+    "description": "Digital products engineered for scale, performance and long-term growth.",
+    "customNote": "Ready to ship something real?",
+    "letsTalk": "Get a Technical Proposal",
     "webDev": {
       "name": "Web Development",
-      "headline": "Web apps that convert visitors into customers",
-      "description": "Fast, revenue-generating web applications that work flawlessly on every device. Your customers won't wait—neither should your website.",
-      "stat": "Average 40% faster load times than industry standard",
+      "headline": "Web platforms built for performance and growth",
+      "description": "From e-commerce to custom platforms - we build fast, scalable web products that work flawlessly on every device and drive real business outcomes.",
+      "stat": "Delivered: Dysnomia Art Gallery, Rent Gevgelija, Sparkle.mk",
       "capabilities": [
         "Full-stack web applications",
         "E-commerce platforms",
-        "Progressive Web Apps (PWAs)",
+        "Admin panels & CMS",
         "API development & integration",
         "Performance optimization",
         "SEO-ready architecture"
@@ -79,9 +78,9 @@
     },
     "mobileDev": {
       "name": "Mobile Development",
-      "headline": "Mobile apps your users actually love",
-      "description": "Cross-platform apps that feel native, drive engagement, and keep users coming back. One codebase, twice the reach.",
-      "stat": "4.5+ average App Store rating across client apps",
+      "headline": "Mobile apps your users actually keep",
+      "description": "Cross-platform apps that feel native and solve real problems. One codebase, two stores, built around how your users actually behave.",
+      "stat": "Delivered: GoGevgelija - live mobile app for iOS & Android",
       "capabilities": [
         "iOS & Android from one codebase",
         "Offline-first functionality",
@@ -93,14 +92,14 @@
     },
     "uiux": {
       "name": "UI/UX Design",
-      "headline": "Interfaces that guide users to action",
-      "description": "User-centered design that reduces friction, increases conversions, and makes your product a joy to use.",
-      "stat": "Average 25% improvement in user task completion",
+      "headline": "We design systems, not just screens",
+      "description": "User-centered design that reduces friction and makes your product intuitive from the first tap. Consistent, scalable, and built to convert.",
+      "stat": "Design systems applied across all GoDevLab products",
       "capabilities": [
         "Conversion-focused design",
         "User research & testing",
         "Interactive prototypes",
-        "Design systems",
+        "Design systems & tokens",
         "Accessibility compliance",
         "Mobile-first approach"
       ]
@@ -108,87 +107,87 @@
   },
   "process": {
     "title": "How We Work Together",
-    "description": "No surprises, no mysteries. Here's exactly what working with us looks like.",
+    "description": "A straightforward process built around clear communication and predictable delivery.",
     "steps": {
       "discovery": {
         "title": "Discovery Call",
         "duration": "Day 1",
-        "description": "We learn about your business, goals, and challenges. No sales pitch—just a conversation to see if we're the right fit. Zero commitment."
+        "description": "We start with a conversation to understand your business, goals and what you want to achieve. No obligation."
       },
       "proposal": {
         "title": "Detailed Proposal",
         "duration": "Day 3-5",
-        "description": "You receive a clear scope, timeline, and fixed-price quote. No hidden fees, no \"we'll figure it out later.\" You know exactly what you're getting."
+        "description": "We send a written proposal with a clear scope, timeline and fixed price. Everything is agreed before work begins."
       },
       "design": {
         "title": "Design Phase",
         "duration": "Week 1-2",
-        "description": "You approve every design before we write a single line of code. Unlimited revisions until you're 100% satisfied with the direction."
+        "description": "Design work is reviewed and approved by you before development starts. We iterate based on your feedback."
       },
       "development": {
         "title": "Development",
         "duration": "Weeks 2-6",
-        "description": "Weekly demos show your project coming to life. You see progress in real-time and can give feedback at every step."
+        "description": "We share progress regularly through demos or staging builds. You can review and give feedback throughout."
       },
       "testing": {
         "title": "Testing & Launch",
         "duration": "Week 6-7",
-        "description": "Thorough QA across all devices and browsers. We handle deployment and ensure a smooth, stress-free launch."
+        "description": "The product is tested across devices and browsers before going live. We handle deployment and monitor the launch."
       },
       "support": {
         "title": "Ongoing Support",
         "duration": "6+ months",
-        "description": "6 months of bug fixes included free. We're here for you long after launch, ensuring your product keeps performing."
+        "description": "Six months of bug fixes are included. We remain available after launch for questions, fixes and future work."
       }
     },
     "cta": {
-      "text": "Ready to start? Let's talk about your project.",
-      "button": "Book a Free Call"
+      "text": "Have a project in mind? Get in touch and we'll take it from there.",
+      "button": "Get in Touch"
     }
   },
   "whyUs": {
     "title": "Why Clients Choose Us",
-    "description": "We're not just developers—we're partners invested in your success",
+    "description": "We build lasting partnerships with businesses that value quality, reliability and honest communication.",
     "techTitle": "Built with modern, battle-tested technology",
     "benefits": {
       "onTime": {
         "title": "On-Time Delivery",
-        "description": "We hit our deadlines. Period. Your project won't drag on for months with endless delays.",
-        "stat": "98% on-time delivery rate"
+        "description": "We scope projects carefully and communicate early if anything changes. Timelines are set realistically and respected throughout.",
+        "stat": "Consistent on-time delivery"
       },
       "pricing": {
         "title": "Transparent Pricing",
-        "description": "Fixed-price quotes after thorough scoping. No hourly surprises, no scope creep costs.",
-        "stat": "0 budget overruns"
+        "description": "Every project starts with a fixed-price quote after thorough scoping. You know exactly what you are paying before any work begins.",
+        "stat": "No hidden fees or surprises"
       },
       "support": {
         "title": "Post-Launch Support",
-        "description": "We don't disappear after launch. Bug fixes and support included free for 6 months.",
-        "stat": "6 months free support"
+        "description": "Six months of bug fixes are included with every project. We stay available after launch to make sure everything runs as expected.",
+        "stat": "6 months included support"
       },
       "communication": {
-        "title": "Clear Communication",
-        "description": "Weekly updates, responsive communication, your preferred channel. You'll never wonder what's happening.",
-        "stat": "24-hour response time"
+        "title": "Reliable Communication",
+        "description": "Regular updates through your preferred channel, with a response time under 24 hours. You always know where the project stands.",
+        "stat": "Under 24h response time"
       },
       "ownership": {
         "title": "Full Code Ownership",
-        "description": "You own 100% of the code. No licensing fees, no lock-in, no strings attached.",
-        "stat": "100% code ownership"
+        "description": "Everything we build is yours — full source code, no licensing fees, no dependency on us to keep it running.",
+        "stat": "100% yours from day one"
       },
       "scalable": {
-        "title": "Built to Scale",
-        "description": "Architecture designed for growth. Your app will handle 10x your current users without breaking.",
-        "stat": "Ready for 10x growth"
+        "title": "Built for Growth",
+        "description": "We make sensible architectural decisions early so your product can scale without expensive rewrites further down the line.",
+        "stat": "Scalable architecture by default"
       }
     },
     "stats": {
       "years": {
-        "value": "5+",
+        "value": "3+",
         "label": "Years in Business"
       },
       "projects": {
-        "value": "50+",
+        "value": "20+",
         "label": "Projects Delivered"
       },
       "satisfaction": {
@@ -208,55 +207,51 @@
     }
   },
   "faq": {
-    "title": "Common Questions & Concerns",
-    "description": "Straight answers to the questions every client asks",
+    "title": "Common Questions",
+    "description": "Answers to questions we hear most often.",
     "stillHaveQuestions": {
       "title": "Still have questions?",
-      "description": "We're happy to chat about your specific situation—no obligation.",
+      "description": "Get in touch and we'll answer any questions about your project.",
       "button": "Get in Touch"
     },
     "questions": [
       {
-        "question": "What if the project goes over budget?",
-        "answer": "It won't. We provide fixed-price quotes after thorough scoping. In 5 years, we've never exceeded a quoted budget. If scope changes during the project, we discuss pricing transparently before any additional work begins—you'll never be surprised by a bill."
+        "question": "How do you handle budget?",
+        "answer": "We provide fixed-price quotes after thorough scoping. If scope changes during the project, we discuss pricing transparently before any additional work begins — you won't be surprised by unexpected charges."
       },
       {
-        "question": "I'm not technical—can I still work with you?",
-        "answer": "Absolutely. Most of our clients aren't technical, and that's perfectly fine. We explain everything in plain English, handle all the technical decisions, and keep you informed without overwhelming you with jargon. You focus on your business; we handle the tech."
+        "question": "I'm not technical-can I still work with you?",
+        "answer": "Most of our clients aren't technical, and that's fine. We explain things in plain language, handle the technical decisions, and keep you informed without the jargon."
       },
       {
         "question": "What happens if something breaks after launch?",
-        "answer": "You're covered. Every project includes 6 months of free bug fixes and support. If something breaks, we fix it—no questions asked, no extra charges. After the support period, we offer affordable maintenance plans to keep things running smoothly."
+        "answer": "Every project includes six months of bug fixes. If something breaks, we fix it at no extra charge. After that period, we offer maintenance plans if you need ongoing coverage."
       },
       {
-        "question": "How do I know you'll actually deliver?",
-        "answer": "Track record speaks for itself: 98% on-time delivery rate, 50+ successful projects, and clients who come back for more. We also provide weekly progress demos—you'll see your project evolving in real-time, so there are no surprises at the end."
+        "question": "How do you keep projects on track?",
+        "answer": "We share progress through regular demos or staging builds so you can see where things stand throughout development. Milestones and timelines are agreed up front."
       },
       {
-        "question": "What makes you different from cheaper freelancers?",
-        "answer": "Cheaper often costs more in the long run. We've rescued many projects from freelancers who disappeared or delivered buggy code. With us, you get: fixed pricing (no hourly billing games), professional project management, quality assurance testing, proper documentation, and ongoing support. We're a long-term partner, not a one-off transaction."
+        "question": "How do you compare to working with a freelancer?",
+        "answer": "Working with a small agency means you get consistent communication, project management, quality assurance and post-launch support built in. The scope and price are fixed, not billed by the hour."
       },
       {
         "question": "How long will my project take?",
-        "answer": "Typical timelines: Simple websites (2-4 weeks), web applications (6-12 weeks), mobile apps (8-16 weeks). We'll give you an accurate timeline during our discovery call, and we're transparent about what affects delivery—we won't promise something we can't deliver."
+        "answer": "Typical timelines: simple websites (2–4 weeks), web applications (6–12 weeks), mobile apps (8–16 weeks). We'll give you an accurate estimate after our initial conversation."
       },
       {
         "question": "Do you work with startups or just established businesses?",
-        "answer": "Both! We've helped startups launch their first MVP and scaled enterprise solutions for established companies. What matters is whether we can genuinely help you succeed. If we don't think we're the right fit, we'll tell you honestly."
+        "answer": "We work with both. We've helped early-stage companies launch their first product and supported established businesses with larger, ongoing projects."
       },
       {
         "question": "What if I need changes during development?",
-        "answer": "Changes are normal and expected. Minor adjustments within scope are included. For larger changes, we'll discuss the impact on timeline and budget before proceeding—you're always in control. Our weekly demos help catch any misalignments early, before they become expensive."
+        "answer": "Changes are normal. Minor adjustments within scope are included. For anything larger, we'll discuss the impact on timeline and budget before proceeding. Regular demos help catch misalignments early."
       }
     ]
   },
   "contact": {
     "title": "Let's Build Something Great",
     "description": "Tell us about your project and get a free assessment within 24 hours",
-    "urgency": {
-      "badge": "Currently accepting 2 new projects this quarter",
-      "description": "Limited availability—book your free consultation to secure your spot"
-    },
     "form": {
       "name": "Name",
       "namePlaceholder": "Your name",
@@ -269,25 +264,17 @@
       "send": "Get Free Assessment",
       "sending": "Sending...",
       "success": "Thanks! We'll review your project and respond within 24 hours with a free assessment.",
-      "error": "Something went wrong. Please try again or email us directly at hello@studiocomplex.dev"
+      "error": "Something went wrong. Please try again or email us directly at godevlabagency@gmail.com"
     },
     "info": {
       "title": "Prefer to Talk?",
-      "description": "Book a free 30-minute call. No sales pitch, no pressure—just a conversation about your project and how we can help.",
+      "description": "Book a free 30-minute call. No sales pitch, no pressure-just a conversation about your project and how we can help.",
       "email": "Email",
-      "connect": "Connect",
-      "availability": "Current Availability",
-      "availabilityText": "We're currently accepting new projects starting March 2024. Book now to secure your spot."
-    },
-    "nextSteps": {
-      "title": "What Happens Next?",
-      "step1": "We review your project details within 24 hours",
-      "step2": "You receive a free assessment with recommendations",
-      "step3": "If we're a good fit, we schedule a discovery call"
+      "connect": "Connect"
     }
   },
   "footer": {
-    "description": "We build the apps that grow your business. From idea to launch—and beyond.",
+    "description": "We build the apps that grow your business. From idea to launch-and beyond.",
     "rights": "All rights reserved."
   },
   "projects": {
@@ -313,6 +300,9 @@
     "title": "Page not found",
     "description": "Sorry, the page you're looking for doesn't exist.",
     "backHome": "Back to home"
+  },
+  "trustedBy": {
+    "title": "Our partners trust us"
   },
   "awards": {
     "title": "Recognition & Expertise",

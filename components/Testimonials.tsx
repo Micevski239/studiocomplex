@@ -29,17 +29,6 @@ export default function Testimonials() {
     },
   ]
 
-  const clientLogos = [
-    'TechCorp',
-    'StartupXYZ',
-    'InnovateCo',
-    'GrowthLabs',
-    'DataFlow',
-    'CloudBase',
-    'NextGen',
-    'ScaleUp',
-  ]
-
   return (
     <section className="border-b border-space-surface bg-space-light dark:border-dark-space-surface dark:bg-dark-space-light">
       <div className="mx-auto max-w-container px-6 py-24 lg:py-32">
@@ -88,23 +77,6 @@ export default function Testimonials() {
               </div>
             </div>
           ))}
-        </div>
-
-        {/* Trusted By logos - simple static row */}
-        <div className="mx-auto mt-16 max-w-4xl">
-          <p className="mb-8 text-center text-sm font-semibold uppercase tracking-wider text-text-secondary dark:text-dark-text-secondary">
-            {t('trustedBy')}
-          </p>
-          <div className="flex flex-wrap items-center justify-center gap-4">
-            {clientLogos.map((logo, index) => (
-              <div
-                key={index}
-                className="flex h-12 min-w-[120px] items-center justify-center rounded-lg border border-space-surface bg-space px-6 font-mono text-sm text-text-secondary transition-all hover:border-accent-blue/50 hover:text-text-primary dark:border-dark-space-surface dark:bg-dark-space dark:text-dark-text-secondary dark:hover:text-dark-text-primary"
-              >
-                {logo}
-              </div>
-            ))}
-          </div>
         </div>
       </div>
     </section>

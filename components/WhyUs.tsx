@@ -8,37 +8,31 @@ export default function WhyUs() {
 
   const benefits = [
     {
-      icon: '⏱️',
       title: t('benefits.onTime.title'),
       description: t('benefits.onTime.description'),
       stat: t('benefits.onTime.stat'),
     },
     {
-      icon: '💰',
       title: t('benefits.pricing.title'),
       description: t('benefits.pricing.description'),
       stat: t('benefits.pricing.stat'),
     },
     {
-      icon: '🛡️',
       title: t('benefits.support.title'),
       description: t('benefits.support.description'),
       stat: t('benefits.support.stat'),
     },
     {
-      icon: '💬',
       title: t('benefits.communication.title'),
       description: t('benefits.communication.description'),
       stat: t('benefits.communication.stat'),
     },
     {
-      icon: '🔓',
       title: t('benefits.ownership.title'),
       description: t('benefits.ownership.description'),
       stat: t('benefits.ownership.stat'),
     },
     {
-      icon: '📈',
       title: t('benefits.scalable.title'),
       description: t('benefits.scalable.description'),
       stat: t('benefits.scalable.stat'),
@@ -90,7 +84,6 @@ export default function WhyUs() {
               key={index}
               className="group rounded-2xl border border-space-surface bg-space-light p-6 transition-all duration-200 hover:border-accent-blue/50 hover:bg-space-surface dark:border-dark-space-surface dark:bg-dark-space-light dark:hover:bg-dark-space-surface"
             >
-              <div className="mb-4 text-3xl transition-transform group-hover:scale-110">{benefit.icon}</div>
               <h3 className="mb-2 text-xl font-bold text-text-primary dark:text-dark-text-primary">
                 {benefit.title}
               </h3>

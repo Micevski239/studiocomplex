@@ -1,6 +1,7 @@
 'use client'
 
 import { useTranslations } from 'next-intl'
+import { TiltCard } from '@/components/animations'
 
 export default function Services() {
   const t = useTranslations('services')
@@ -43,9 +44,12 @@ export default function Services() {
 
         <div className="mx-auto grid max-w-6xl gap-8 md:grid-cols-2 lg:grid-cols-3">
           {services.map((service, index) => (
-            <div
+            <TiltCard
               key={index}
-              className="group relative h-full rounded-2xl border border-space-surface bg-space p-8 transition-all duration-200 hover:scale-[1.02] hover:border-accent-blue/50 dark:border-dark-space-surface dark:bg-dark-space"
+              className="group relative h-full rounded-2xl border border-space-surface bg-space p-8 transition-all hover:border-accent-blue/50 dark:border-dark-space-surface dark:bg-dark-space"
+              scale={1.02}
+              tiltMaxAngleX={5}
+              tiltMaxAngleY={5}
             >
               {/* Service name badge */}
               <div className="mb-4 inline-block rounded-full bg-accent-blue/10 px-3 py-1 text-xs font-semibold uppercase tracking-wider text-accent-blue">
@@ -78,7 +82,7 @@ export default function Services() {
                   </div>
                 ))}
               </div>
-            </div>
+            </TiltCard>
           ))}
         </div>
 

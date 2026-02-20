@@ -5,7 +5,7 @@ import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 import { useTranslations, useLocale } from 'next-intl'
 import { motion, useScroll, useSpring } from 'framer-motion'
-import ThemeToggle from './ThemeToggle'
+
 import LanguageSwitcher from './LanguageSwitcher'
 
 export default function Header() {
@@ -86,7 +86,7 @@ export default function Header() {
       <div className="mx-auto max-w-container px-6">
         <div className="flex h-16 items-center justify-between">
           <Link href={getLocalizedPath('/')} className="font-mono text-xl font-bold text-accent-blue">
-            StudioComplex
+            GoDevLab
           </Link>
 
           <nav className="hidden items-center gap-6 lg:flex">
@@ -112,7 +112,7 @@ export default function Header() {
             <div className="mx-2 h-4 w-px bg-space-surface dark:bg-dark-space-surface" />
 
             <LanguageSwitcher />
-            <ThemeToggle />
+
 
             <a
               href={getAnchorHref('contact')}
@@ -125,7 +125,7 @@ export default function Header() {
           {/* Medium screens: just contact + toggles */}
           <div className="hidden items-center gap-4 md:flex lg:hidden">
             <LanguageSwitcher />
-            <ThemeToggle />
+
             <a
               href={getAnchorHref('contact')}
               className="rounded-lg bg-accent-blue px-4 py-2 text-sm font-semibold text-white transition-colors hover:bg-accent-blue/90"

@@ -2,6 +2,7 @@
 
 import Link from 'next/link'
 import { useLocale, useTranslations } from 'next-intl'
+import { TiltCard } from '@/components/animations'
 import { Project } from '@/types/project'
 
 interface ProjectCardProps {
@@ -20,7 +21,12 @@ export default function ProjectCard({ project, index }: ProjectCardProps) {
 
   return (
     <Link href={getLocalizedPath(`/projects/${project.slug}`)}>
-      <div className="group relative h-full rounded-2xl border border-space-surface bg-space-light p-6 transition-all duration-200 hover:scale-[1.02] hover:border-accent-blue/50 dark:border-dark-space-surface dark:bg-dark-space-light">
+      <TiltCard
+        className="group relative h-full rounded-2xl border border-space-surface bg-space-light p-6 transition-all hover:border-accent-blue/50 dark:border-dark-space-surface dark:bg-dark-space-light"
+        scale={1.03}
+        tiltMaxAngleX={8}
+        tiltMaxAngleY={8}
+      >
         {/* Project Image */}
         <div className="mb-6 aspect-video w-full overflow-hidden rounded-lg bg-gradient-to-br from-accent-blue/20 to-accent-cyan/20">
           <img
@@ -63,7 +69,7 @@ export default function ProjectCard({ project, index }: ProjectCardProps) {
             </span>
           )}
         </div>
-      </div>
+      </TiltCard>
     </Link>
   )
 }

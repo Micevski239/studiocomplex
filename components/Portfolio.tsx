@@ -2,6 +2,7 @@
 
 import Link from 'next/link'
 import { useTranslations, useLocale } from 'next-intl'
+import { TiltCard } from '@/components/animations'
 import { getFeaturedProjects } from '@/data/projects'
 
 export default function Portfolio() {
@@ -29,9 +30,14 @@ export default function Portfolio() {
         <div className="mx-auto grid max-w-6xl gap-8 md:grid-cols-2 lg:grid-cols-3">
           {featuredProjects.map((project) => (
             <Link key={project.slug} href={getLocalizedPath(`/projects/${project.slug}`)}>
-              <div className="group relative h-full rounded-2xl border border-space-surface bg-space-light p-6 transition-all duration-200 hover:scale-[1.02] hover:border-accent-blue/50 dark:border-dark-space-surface dark:bg-dark-space-light">
-                {/* Project Image */}
-                <div className="mb-6 aspect-video w-full overflow-hidden rounded-lg bg-gradient-to-br from-accent-blue/20 to-accent-cyan/20">
+              <TiltCard
+                className="group relative flex h-full flex-col rounded-2xl border border-space-surface bg-space-light p-6 transition-all hover:border-accent-blue/50 dark:border-dark-space-surface dark:bg-dark-space-light"
+                scale={1.03}
+                tiltMaxAngleX={8}
+                tiltMaxAngleY={8}
+              >
+                {/* Project Image - fixed ratio */}
+                <div className="mb-6 aspect-video w-full flex-shrink-0 overflow-hidden rounded-lg bg-gradient-to-br from-accent-blue/20 to-accent-cyan/20">
                   <img
                     src={project.coverImage}
                     alt={project.title}
@@ -39,39 +45,30 @@ export default function Portfolio() {
                   />
                 </div>
 
-                {/* Metric badge */}
-                {project.metrics && (
-                  <div className="mb-3 inline-flex rounded-full bg-accent-blue/10 px-3 py-1 text-xs font-semibold text-accent-blue">
-                    {project.metrics}
-                  </div>
-                )}
+                {/* Category badge - fixed height */}
+                <div className="mb-3 flex h-6 items-center gap-2">
+                  <span className="rounded-full bg-accent-blue/10 px-3 py-0.5 text-xs font-medium capitalize text-accent-blue">
+                    {project.category}
+                  </span>
+                  {project.featured && (
+                    <span className="rounded-full bg-accent-cyan/10 px-3 py-0.5 text-xs font-medium text-accent-cyan">
+                      Featured
+                    </span>
+                  )}
+                </div>
 
-                {/* Client */}
-                {project.clientName && (
-                  <div className="mb-2 text-xs font-medium uppercase tracking-wider text-text-secondary dark:text-dark-text-secondary">
-                    {project.clientName}
-                  </div>
-                )}
-
-                {/* Project Info */}
-                <h3 className="mb-2 text-xl font-bold text-text-primary dark:text-dark-text-primary">
+                {/* Title - fixed 1 line */}
+                <h3 className="mb-2 line-clamp-1 text-xl font-bold text-text-primary dark:text-dark-text-primary">
                   {project.title}
                 </h3>
-                <p className="mb-4 text-sm text-text-secondary dark:text-dark-text-secondary">
+
+                {/* Description - fixed 3 lines */}
+                <p className="mb-4 line-clamp-3 text-sm leading-relaxed text-text-secondary dark:text-dark-text-secondary">
                   {project.shortDescription}
                 </p>
 
-                {/* Testimonial */}
-                {project.testimonial && (
-                  <div className="mb-4 border-l-2 border-accent-blue/30 pl-3">
-                    <p className="text-xs italic text-text-secondary dark:text-dark-text-secondary">
-                      &ldquo;{project.testimonial}&rdquo;
-                    </p>
-                  </div>
-                )}
-
-                {/* Technologies */}
-                <div className="mb-4 flex flex-wrap gap-2">
+                {/* Technologies - fixed 1 row */}
+                <div className="mb-4 flex h-7 flex-shrink-0 items-center gap-2 overflow-hidden">
                   {project.technologies.slice(0, 3).map((tech, i) => (
                     <span
                       key={i}
@@ -87,8 +84,8 @@ export default function Portfolio() {
                   )}
                 </div>
 
-                {/* Links */}
-                <div className="flex gap-3 border-t border-space-surface pt-4 dark:border-dark-space-surface">
+                {/* Links - pinned to bottom */}
+                <div className="mt-auto flex gap-3 border-t border-space-surface pt-4 dark:border-dark-space-surface">
                   {project.liveUrl && (
                     <span className="flex-1 rounded-lg bg-accent-blue/10 py-2 text-center text-sm font-semibold text-accent-blue transition-all group-hover:bg-accent-blue/20">
                       {t('liveDemo')}
@@ -100,7 +97,7 @@ export default function Portfolio() {
                     </span>
                   )}
                 </div>
-              </div>
+              </TiltCard>
             </Link>
           ))}
         </div>
