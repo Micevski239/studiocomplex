@@ -157,7 +157,7 @@ export default function Contact() {
                 </div>
                 <div className="flex gap-4">
                   <a
-                    href="https://instagram.com/godevlab"
+                    href="https://www.instagram.com/godevlab/"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="inline-flex items-center gap-2 rounded-lg border border-space-surface bg-space px-4 py-2 text-sm font-medium text-text-primary transition-all hover:border-accent-blue/50 hover:bg-space-surface dark:border-dark-space-surface dark:bg-dark-space dark:text-dark-text-primary dark:hover:bg-dark-space-surface"
@@ -165,7 +165,7 @@ export default function Contact() {
                     Instagram
                   </a>
                   <a
-                    href="https://facebook.com/godevlab"
+                    href="https://www.facebook.com/godevlab/"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="inline-flex items-center gap-2 rounded-lg border border-space-surface bg-space px-4 py-2 text-sm font-medium text-text-primary transition-all hover:border-accent-blue/50 hover:bg-space-surface dark:border-dark-space-surface dark:bg-dark-space dark:text-dark-text-primary dark:hover:bg-dark-space-surface"
@@ -173,7 +173,7 @@ export default function Contact() {
                     Facebook
                   </a>
                   <a
-                    href="https://wa.me/YOUR_PHONE_NUMBER"
+                    href="https://wa.me/38978408779"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="inline-flex items-center gap-2 rounded-lg border border-space-surface bg-space px-4 py-2 text-sm font-medium text-text-primary transition-all hover:border-accent-blue/50 hover:bg-space-surface dark:border-dark-space-surface dark:bg-dark-space dark:text-dark-text-primary dark:hover:bg-dark-space-surface"

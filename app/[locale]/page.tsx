@@ -4,7 +4,6 @@ import TrustedBy from '@/components/TrustedBy'
 import Portfolio from '@/components/Portfolio'
 import Services from '@/components/Services'
 import Testimonials from '@/components/Testimonials'
-import Process from '@/components/Process'
 import WhyUs from '@/components/WhyUs'
 import FAQ from '@/components/FAQ'
 import Contact from '@/components/Contact'
@@ -29,10 +28,7 @@ export default function Home() {
         <div id="testimonials">
           <Testimonials />
         </div>
-        <div id="process">
-          <Process />
-        </div>
-        <div id="why-us">
+<div id="why-us">
           <WhyUs />
         </div>
 <div id="faq">
