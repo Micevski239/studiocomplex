@@ -30,29 +30,15 @@
   },
   "testimonials": {
     "title": "What Our Clients Say",
-    "description": "Don't just take our word for it-hear from businesses we've helped succeed",
-    "trustedBy": "Trusted by companies worldwide",
+    "description": "Feedback from businesses we have worked with.",
     "items": [
       {
-        "quote": "They delivered exactly what we needed, on time and within budget. Our app's user engagement increased by 150% after launch.",
-        "author": "Sarah Chen",
-        "role": "CEO",
-        "company": "TechStart Inc.",
-        "metric": "150% engagement increase"
+        "quote": "Working with GoDevLab was a great experience. They are always open to communication, dedicated and professional, which makes the collaboration easy and enjoyable. We can confidently say they are reliable partners and gladly recommend their services to anyone looking for a dependable and effective team.",
+        "company": "Sparkle.mk"
       },
       {
-        "quote": "Professional, responsive, and they actually listen. The dashboard they built cut our reporting time from hours to minutes.",
-        "author": "Michael Roberts",
-        "role": "Operations Director",
-        "company": "DataFlow Solutions",
-        "metric": "90% time savings"
-      },
-      {
-        "quote": "Best investment we made this year. The mobile app paid for itself within the first month through increased bookings.",
-        "author": "Elena Petrova",
-        "role": "Founder",
-        "company": "BookEasy",
-        "metric": "ROI in 30 days"
+        "quote": "Professional approach, creative solutions and support at every step - highly recommend. Our website was completed on time and with excellent quality - the team really knows what they are doing.",
+        "company": "Dysnomia Art Gallery"
       }
     ]
   },

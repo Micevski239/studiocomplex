@@ -6,27 +6,8 @@ export default function Testimonials() {
   const t = useTranslations('testimonials')
 
   const testimonials = [
-    {
-      quote: t('items.0.quote'),
-      author: t('items.0.author'),
-      role: t('items.0.role'),
-      company: t('items.0.company'),
-      metric: t('items.0.metric'),
-    },
-    {
-      quote: t('items.1.quote'),
-      author: t('items.1.author'),
-      role: t('items.1.role'),
-      company: t('items.1.company'),
-      metric: t('items.1.metric'),
-    },
-    {
-      quote: t('items.2.quote'),
-      author: t('items.2.author'),
-      role: t('items.2.role'),
-      company: t('items.2.company'),
-      metric: t('items.2.metric'),
-    },
+    { quote: t('items.0.quote'), company: t('items.0.company') },
+    { quote: t('items.1.quote'), company: t('items.1.company') },
   ]
 
   return (
@@ -43,35 +24,25 @@ export default function Testimonials() {
         </div>
 
         {/* Testimonials Grid */}
-        <div className="mx-auto grid max-w-6xl gap-8 md:grid-cols-2 lg:grid-cols-3">
+        <div className="mx-auto grid max-w-4xl gap-8 md:grid-cols-2">
           {testimonials.map((testimonial, index) => (
             <div
               key={index}
-              className="flex flex-col rounded-2xl border border-space-surface bg-space p-6 transition-all duration-200 hover:border-accent-blue/50 dark:border-dark-space-surface dark:bg-dark-space"
+              className="flex flex-col rounded-2xl border border-space-surface bg-space p-6 dark:border-dark-space-surface dark:bg-dark-space"
             >
-              {/* Metric badge */}
-              <div className="mb-4 inline-flex self-start rounded-full bg-accent-blue/10 px-3 py-1 text-sm font-semibold text-accent-blue">
-                {testimonial.metric}
-              </div>
-
               {/* Quote */}
-              <blockquote className="mb-6 flex-grow text-text-secondary dark:text-dark-text-secondary">
+              <blockquote className="mb-6 flex-grow leading-relaxed text-text-secondary dark:text-dark-text-secondary">
                 &ldquo;{testimonial.quote}&rdquo;
               </blockquote>
 
               {/* Author */}
               <div className="border-t border-space-surface pt-4 dark:border-dark-space-surface">
                 <div className="flex items-center gap-3">
-                  <div className="flex h-10 w-10 items-center justify-center rounded-full bg-accent-blue/10 text-lg font-bold text-accent-blue">
-                    {testimonial.author.charAt(0)}
+                  <div className="flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-full bg-accent-blue/10 text-lg font-bold text-accent-blue">
+                    {testimonial.company.charAt(0)}
                   </div>
-                  <div>
-                    <div className="font-semibold text-text-primary dark:text-dark-text-primary">
-                      {testimonial.author}
-                    </div>
-                    <div className="text-sm text-text-secondary dark:text-dark-text-secondary">
-                      {testimonial.role}, {testimonial.company}
-                    </div>
+                  <div className="font-semibold text-text-primary dark:text-dark-text-primary">
+                    {testimonial.company}
                   </div>
                 </div>
               </div>
