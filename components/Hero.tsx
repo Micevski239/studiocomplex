@@ -39,7 +39,6 @@ export default function Hero() {
                 className="group relative inline-flex items-center justify-center overflow-hidden rounded-lg bg-accent-blue px-8 py-4 font-semibold text-white transition-all hover:scale-105 hover:bg-accent-blue/90"
               >
                 <span className="relative z-10">{t('startProject')}</span>
-                <span className="ml-2 transition-transform group-hover:translate-x-1">→</span>
               </a>
 
               <a

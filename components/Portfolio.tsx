@@ -76,7 +76,7 @@ export default function Portfolio() {
                 {project.technologies.slice(0, 3).map((tech, i) => (
                   <span
                     key={i}
-                    className="rounded-md bg-accent-blue/10 px-2 py-1 font-mono text-xs text-accent-blue"
+                    className="whitespace-nowrap rounded-md bg-accent-blue/10 px-2 py-1 font-mono text-xs text-accent-blue"
                   >
                     {tech}
                   </span>
