@@ -102,12 +102,9 @@ export default function Header() {
             <a href={getAnchorHref('why-us')} className={navLinkClass('why-us')}>
               {t('techStack')}
             </a>
-            <Link
-              href={getLocalizedPath('/projects')}
-              className="text-sm font-medium text-text-secondary transition-colors hover:text-text-primary dark:text-dark-text-secondary dark:hover:text-dark-text-primary"
-            >
-              {t('projects')}
-            </Link>
+            <a href={getAnchorHref('faq')} className={navLinkClass('faq')}>
+              {t('faq')}
+            </a>
 
             <div className="mx-2 h-4 w-px bg-space-surface dark:bg-dark-space-surface" />
 

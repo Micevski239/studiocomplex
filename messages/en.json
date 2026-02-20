@@ -4,7 +4,7 @@
     "portfolio": "Portfolio",
     "services": "Services",
     "techStack": "Why Us",
-    "projects": "Projects",
+    "faq": "FAQ",
     "contact": "Contact"
   },
   "hero": {
@@ -26,8 +26,7 @@
     "title": "Real Results for Real Clients",
     "description": "See how we've helped businesses like yours achieve measurable growth",
     "liveDemo": "Live Demo",
-    "github": "GitHub",
-    "viewAll": "View All Projects"
+    "github": "GitHub"
   },
   "testimonials": {
     "title": "What Our Clients Say",
@@ -277,21 +276,9 @@
     "description": "We build the apps that grow your business. From idea to launch-and beyond.",
     "rights": "All rights reserved."
   },
-  "projects": {
-    "pageTitle": "All Projects",
-    "pageDescription": "Complete portfolio showcasing real results for real clients",
-    "features": "Features",
-    "technologies": "Technologies",
-    "liveWebsite": "Visit Website",
-    "viewCode": "View Code",
-    "gallery": "Gallery",
-    "contactCta": "Interested in a similar project?",
-    "contactCtaDescription": "Get in touch and let's discuss your idea",
-    "backToProjects": "Back to projects"
-  },
   "mobileNav": {
     "home": "Home",
-    "projects": "Projects",
+    "portfolio": "Portfolio",
     "services": "Services",
     "contact": "Contact",
     "menu": "Menu"
