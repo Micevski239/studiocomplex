@@ -29,7 +29,7 @@ export default function TrustedBy() {
           </h2>
         </motion.div>
 
-        <div className="flex items-center justify-center gap-12 sm:gap-16 lg:gap-20">
+        <div className="grid grid-cols-2 gap-8 sm:flex sm:items-center sm:justify-center sm:gap-16 lg:gap-20">
           {brands.map((brand, i) => (
             <motion.div
               key={brand.name}
@@ -44,7 +44,7 @@ export default function TrustedBy() {
                 alt={brand.name}
                 width={500}
                 height={400}
-                className="h-32 w-auto object-contain sm:h-36 lg:h-44"
+                className="h-24 w-auto object-contain sm:h-32 lg:h-40"
               />
             </motion.div>
           ))}
