@@ -15,39 +15,37 @@ export default function TrustedBy() {
   const t = useTranslations('trustedBy')
 
   return (
-    <section className="border-b border-space-surface bg-space-light py-20 dark:border-dark-space-surface dark:bg-[#1a2035] lg:py-28">
+    <section className="border-b border-space-surface bg-space-light py-8 dark:border-dark-space-surface dark:bg-[#1a2035] lg:py-12">
       <div className="mx-auto max-w-container px-6">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
-          className="mb-12 text-center"
+          className="mb-6 text-center"
         >
           <h2 className="text-lg font-semibold uppercase tracking-wider text-white">
             {t('title')}
           </h2>
         </motion.div>
 
-        <div className="grid grid-cols-2 gap-8 sm:flex sm:items-center sm:justify-center sm:gap-16 lg:gap-20">
-          {brands.map((brand, i) => (
-            <motion.div
-              key={brand.name}
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.5, delay: i * 0.15 }}
-              className="flex items-center justify-center"
-            >
-              <Image
-                src={brand.logo}
-                alt={brand.name}
-                width={500}
-                height={400}
-                className="h-24 w-auto object-contain sm:h-32 lg:h-40"
-              />
-            </motion.div>
-          ))}
+        <div className="overflow-hidden">
+          <div className="group flex animate-marquee items-center gap-16 hover:[animation-play-state:paused]">
+            {[...brands, ...brands].map((brand, i) => (
+              <div
+                key={`${brand.name}-${i}`}
+                className="flex shrink-0 items-center justify-center"
+              >
+                <Image
+                  src={brand.logo}
+                  alt={brand.name}
+                  width={500}
+                  height={400}
+                  className="h-20 w-auto object-contain sm:h-24 lg:h-32"
+                />
+              </div>
+            ))}
+          </div>
         </div>
       </div>
     </section>

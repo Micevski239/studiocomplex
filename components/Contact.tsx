@@ -155,7 +155,7 @@ export default function Contact() {
                 <div className="mb-2 text-sm font-semibold text-text-secondary dark:text-dark-text-secondary">
                   {t('info.connect')}
                 </div>
-                <div className="flex gap-4">
+                <div className="flex flex-wrap gap-4">
                   <a
                     href="https://www.instagram.com/godevlab/"
                     target="_blank"
