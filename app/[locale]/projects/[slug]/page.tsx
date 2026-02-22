@@ -1,11 +1,11 @@
 import { notFound } from 'next/navigation'
 import Link from 'next/link'
-import Image from 'next/image'
 import { useTranslations, useLocale } from 'next-intl'
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'
 import MobileNav from '@/components/MobileNav'
 import Contact from '@/components/Contact'
+import ImageLightbox from '@/components/ImageLightbox'
 import { getProjectBySlug, getAllProjectSlugs } from '@/data/projects'
 
 export function generateStaticParams() {
@@ -135,34 +135,11 @@ export default function ProjectPage({ params }: { params: { slug: string } }) {
 
               {/* Right — images */}
               <div className="flex flex-col gap-3">
-                {/* Cover image — large */}
-                <div className="relative aspect-video w-full overflow-hidden rounded-2xl">
-                  <Image
-                    src={project.coverImage}
-                    alt={project.title}
-                    fill
-                    priority
-                    className="object-cover"
-                    sizes="(min-width: 1024px) 50vw, 100vw"
-                  />
-                </div>
-
-                {/* Gallery — 2×2 grid */}
-                {project.gallery && project.gallery.length > 0 && (
-                  <div className="grid grid-cols-2 gap-3">
-                    {project.gallery.slice(0, 4).map((image, index) => (
-                      <div key={index} className="relative aspect-video overflow-hidden rounded-xl">
-                        <Image
-                          src={image.src}
-                          alt={image.alt}
-                          fill
-                          className="object-cover transition-transform duration-300 hover:scale-105"
-                          sizes="(min-width: 1024px) 25vw, 50vw"
-                        />
-                      </div>
-                    ))}
-                  </div>
-                )}
+                <ImageLightbox
+                  images={project.gallery ?? []}
+                  coverImage={project.coverImage}
+                  coverAlt={project.title}
+                />
               </div>
 
             </div>

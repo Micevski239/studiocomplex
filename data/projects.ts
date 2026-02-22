@@ -138,6 +138,52 @@ export const projects: Project[] = [
     },
   },
   {
+    slug: 'gogevgelija-website',
+    title: 'GoGevgelija Website',
+    shortDescription:
+      'A promotional landing page for the GoGevgelija mobile app with app screenshots, feature highlights, download links, and a contact form.',
+    fullDescription:
+      'GoGevgelija Website is the official promotional landing page for the GoGevgelija mobile app. It showcases the app\'s core features — local listings, events, promotions, and travel content — through an engaging, scroll-driven layout. The site includes a hero section with download links for App Store and Google Play, a detailed features grid covering 12 capabilities, an interactive screenshot carousel, live metrics (20+ listings, 10+ monthly events, bilingual support, 24/7 access), and a contact form with social links. Built as a responsive, single-page experience to drive app downloads and inform potential users.',
+    coverImage: '/projects/gogevgelija-website/cover.webp',
+    gallery: [
+      { src: '/projects/gogevgelija-website/1.webp', alt: 'website screenshot 1' },
+      { src: '/projects/gogevgelija-website/2.webp', alt: 'website screenshot 2' },
+      { src: '/projects/gogevgelija-website/3.webp', alt: 'website screenshot 3' },
+      { src: '/projects/gogevgelija-website/4.webp', alt: 'website screenshot 4' },
+    ],
+    technologies: ['Next.js', 'React', 'TypeScript', 'Tailwind CSS', 'Framer Motion'],
+    features: [
+      'Hero section with App Store and Google Play download links',
+      'Feature showcase grid with 12 app capabilities',
+      'Interactive app screenshot carousel',
+      'Live metrics display (listings, events, languages, availability)',
+      'Contact form with email, phone, and location info',
+      'Responsive design for all devices',
+      'Smooth scroll-driven animations',
+    ],
+    liveUrl: 'https://gogevgelija.com',
+    category: 'web',
+    featured: true,
+    translations: {
+      mk: {
+        title: 'GoGevgelija Веб-страница',
+        shortDescription:
+          'Промотивна веб-страница за мобилната апликација GoGevgelija со слики од апликацијата, истакнати функции, линкови за преземање и контакт форма.',
+        fullDescription:
+          'GoGevgelija Website е официјалната промотивна веб-страница за мобилната апликација GoGevgelija. Ги прикажува главните функции на апликацијата — локални бизниси, настани, промоции и туристичка содржина — преку привлечен дизајн. Страницата вклучува hero секција со линкови за преземање од App Store и Google Play, детална мрежа на функции, интерактивен приказ на слики од апликацијата, метрики (20+ листинзи, 10+ месечни настани, двојазична поддршка, 24/7 пристап) и контакт форма со социјални линкови.',
+        features: [
+          'Hero секција со линкови за App Store и Google Play',
+          'Приказ на 12 функции на апликацијата',
+          'Интерактивен приказ на слики од апликацијата',
+          'Метрики во живо (листинзи, настани, јазици, достапност)',
+          'Контакт форма со е-пошта, телефон и локација',
+          'Респонзивен дизајн за сите уреди',
+          'Анимации при скролување',
+        ],
+      },
+    },
+  },
+  {
     slug: 'rent-gevgelija',
     title: 'Rent Gevgelija',
     shortDescription:

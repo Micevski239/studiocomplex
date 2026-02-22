@@ -12,6 +12,17 @@ export const metadata: Metadata = {
   icons: {
     icon: '/favicon.png',
   },
+  openGraph: {
+    title: 'GoDevLab | Mobile & Web Developer',
+    description: 'We build web platforms and mobile apps for businesses looking to establish or grow their digital presence.',
+    images: [{ url: '/logo.png' }],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'GoDevLab | Mobile & Web Developer',
+    description: 'We build web platforms and mobile apps for businesses looking to establish or grow their digital presence.',
+    images: ['/logo.png'],
+  },
 }
 
 export default function RootLayout({
