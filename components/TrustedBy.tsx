@@ -30,7 +30,7 @@ export default function TrustedBy() {
         </motion.div>
 
         <div className="overflow-hidden">
-          <div className="group flex animate-marquee items-center gap-16 hover:[animation-play-state:paused]">
+          <div className="group flex animate-marquee items-center gap-8 sm:gap-16 hover:[animation-play-state:paused]">
             {[...brands, ...brands].map((brand, i) => (
               <div
                 key={`${brand.name}-${i}`}
