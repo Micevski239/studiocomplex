@@ -18,34 +18,34 @@ export default function Footer() {
 
           <div className="flex gap-8 text-sm">
             <a
-              href="mailto:your@email.com"
+              href="mailto:godevlabagency@gmail.com"
               className="text-text-secondary transition-colors hover:text-accent-blue dark:text-dark-text-secondary"
             >
               Email
             </a>
             <a
-              href="https://github.com/yourusername"
+              href="https://www.facebook.com/godevlab/"
               target="_blank"
               rel="noopener noreferrer"
               className="text-text-secondary transition-colors hover:text-accent-blue dark:text-dark-text-secondary"
             >
-              GitHub
+              Facebook
             </a>
             <a
-              href="https://linkedin.com/in/yourusername"
+              href="https://www.instagram.com/godevlab/"
               target="_blank"
               rel="noopener noreferrer"
               className="text-text-secondary transition-colors hover:text-accent-blue dark:text-dark-text-secondary"
             >
-              LinkedIn
+              Instagram
             </a>
             <a
-              href="https://twitter.com/yourusername"
+              href="https://wa.me/38978408779"
               target="_blank"
               rel="noopener noreferrer"
               className="text-text-secondary transition-colors hover:text-accent-blue dark:text-dark-text-secondary"
             >
-              Twitter
+              WhatsApp
             </a>
           </div>
         </div>

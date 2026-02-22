@@ -210,11 +210,11 @@ export default function MobileNav() {
                   FAQ
                 </a>
                 <a
-                  href={getAnchorHref('process')}
+                  href={getAnchorHref('about')}
                   onClick={() => setMenuOpen(false)}
                   className="flex items-center justify-center gap-2 rounded-xl border border-space-surface bg-space-light p-3 text-sm font-medium text-text-primary transition-all hover:border-accent-blue/50 dark:border-dark-space-surface dark:bg-dark-space-light dark:text-dark-text-primary"
                 >
-                  Process
+                  About
                 </a>
               </div>
             </div>
